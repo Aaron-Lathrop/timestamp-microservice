@@ -4,7 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 const { router: timestampRouter } = require('./api/timestamp/router');
 
