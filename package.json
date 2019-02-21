@@ -1,0 +1,23 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "A node.js microservice that returns the unix and utc timestamps from a url",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaron-Lathrop/timestamp-microservice.git"
+  },
+  "author": "Aaron Lathrop Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aaron-Lathrop/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/Aaron-Lathrop/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
