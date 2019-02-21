@@ -5,6 +5,11 @@ const router = express.Router();
 
 router.use(express.json());
 
+router.get('/', (req, res) => {
+    const date = new Date();
+    res.json({unix: date.getTime(), utc: date.toUTCString()}).end();
+});
+
 router.get('/:date_string', (req, res) => {
     const dateString = req.params.date_string;
     let date;
@@ -19,8 +24,7 @@ router.get('/:date_string', (req, res) => {
         res.json({error: "Invalid Date"})
     }
 
-    console.log(`The date is: ${date}`);
-    res.json({date});
+    res.json({unix: date.getTime(), utc: date.toUTCString()}).end();
 });
 
 module.exports = { router };
